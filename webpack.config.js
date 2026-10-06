@@ -19,6 +19,9 @@ module.exports = {
         port: 3000,
         open: true,
         liveReload: true,
+        client: {
+            webSocketURL: "auto://0.0.0.0:0/ws"
+        } 
     },
 
     plugins: [
