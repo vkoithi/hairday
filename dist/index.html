@@ -1,186 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="icon" href="./src/assets/scissors.svg" />
-
-    <title>Hair Day</title>
-  <link rel="icon" href="scissors.svg"><script defer src="main.js"></script></head>
-  <body>
-    <div class="container">
-      <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
-
-      <form class="form">
-        <header>
-          <h1>Agende um atendimento</h1>
-          <p>
-            Selecione data, horário e informe o nome do cliente para criar o
-            agendamento
-          </p>
-        </header>
-
-        <label for="date" class="label">Data</label>
-        <div class="input">
-          <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
-          <input type="date" id="date" name="date" required />
-        </div>
-
-        <span class="label">Horários</span>
-        <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
-          <!-- Exemplo: Manhã 
-          <li data-period="morning" class="hour-period">Manhã</li>
-          <li data-period="morning" value="09:00" class="hour hour-available">
-            09:00
-          </li>
-          <li data-period="morning" value="10:00" class="hour hour-available">
-            10:00
-          </li>
-          <li data-period="morning" value="11:00" class="hour hour-unavailable">
-            11:00
-          </li>
-          <li data-period="morning" value="12:00" class="hour hour-available">
-            12:00
-          </li>
-          
-          <li data-period="afternoon" class="hour-period">Tarde</li>
-          <li
-            data-period="afternoon"
-            value="13:00"
-            class="hour hour-unavailable"
-          >
-            13:00
-          </li>
-          <li
-            data-period="afternoon"
-            value="14:00"
-            class="hour hour-unavailable"
-          >
-            14:00
-          </li>
-          <li data-period="afternoon" value="15:00" class="hour hour-available">
-            15:00
-          </li>
-          <li
-            data-period="afternoon"
-            value="16:00"
-            class="hour hour-unavailable"
-          >
-            16:00
-          </li>
-          <li
-            data-period="afternoon"
-            value="17:00"
-            class="hour hour-unavailable"
-          >
-            17:00
-          </li>
-          <li data-period="afternoon" value="18:00" class="hour hour-available">
-            18:00
-          </li>
-         
-          <li data-period="night" class="hour-period">Noite</li>
-
-          <li data-period="night" value="19:00" class="hour hour-available">
-            19:00
-          </li>
-          <li data-period="night" value="20:00" class="hour hour-available">
-            20:00
-          </li>
-          <li data-period="night" value="21:00" class="hour hour-unavailable">
-            21:00
-          </li> -->
-        </ul>
-
-        <label for="client" class="label">Cliente</label>
-        <div class="input">
-          <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
-          <input
-            type="text"
-            id="client"
-            name="client"
-            placeholder="Nome do cliente"
-            required
-          />
-        </div>
-
-        <button type="submit" class="button">Agendar</button>
-      </form>
-
-      <aside class="schedule">
-        <header>
-          <h1>Agendamentos</h1>
-          <p>Visualize os agendamentos de acordo com o dia selecionado</p>
-        </header>
-
-        <section class="schedule-period">
-          <header>
-            <img src="./src/assets/morning.svg" alt="Manhã" />
-            <strong>Manhã</strong>
-            <span>09h-12h</span>
-          </header>
-          <ul id="period-morning" class="period">
-            <!-- Exemplo  -->
-            <li>
-              <strong>11:00</strong>
-              <span>Rodrigo Gonçalves</span>
-              <img
-                src="./src/assets/cancel.svg"
-                alt="Cancelar"
-                class="cancel-icon"
-              />
-            </li>
-          </ul>
-        </section>
-
-        <section class="schedule-period">
-          <header>
-            <img src="./src/assets/afternoon.svg" alt="Tarde" />
-            <strong>Tarde</strong>
-            <span>13h-18h</span>
-          </header>
-          <ul id="period-afternoon" class="period">
-            <!-- Exemplo -->
-            <li>
-              <strong>14:00</strong>
-              <span>Rodrigo Gonçalves</span>
-              <img
-                src="./src/assets/cancel.svg"
-                alt="Cancelar"
-                class="cancel-icon"
-              />
-            </li>
-          </ul>
-        </section>
-
-        <section class="schedule-period">
-          <header>
-            <img src="./src/assets/night.svg" alt="noite" />
-            <strong>Noite</strong>
-            <span>19h-21h</span>
-          </header>
-          <ul id="period-night" class="period">
-            <!-- Exemplo -->
-            <li>
-              <strong>19:00</strong>
-              <span>Rodrigo Gonçalves</span>
-              <img
-                src="./src/assets/cancel.svg"
-                alt="Cancelar"
-                class="cancel-icon"
-              />
-            </li>
-          </ul>
-        </section>
-      </aside>
-    </div>
-  </body>
-</html>
+<head><link rel="icon" href="scissors.svg"><script defer src="main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'C:\Users\koith\Documents\hairday\index.html' in 'C:\Users\koith\Documents\hairday'
+  ModuleNotFoundError: Module not found: Error: Can't resolve 'C:\Users\koith\Documents\hairday\index.html' in 'C:\Users\koith\Documents\hairday'
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\Compilation.js:2375:28
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\NormalModuleFactory.js:1350:13
+      at eval (eval at create (C:\Users\koith\Documents\hairday\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:1)
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\NormalModuleFactory.js:722:22
+      at eval (eval at create (C:\Users\koith\Documents\hairday\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1)
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\NormalModuleFactory.js:904:22
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\NormalModuleFactory.js:438:10
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\NormalModuleFactory.js:1191:25
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\NormalModuleFactory.js:1436:8
+      at C:\Users\koith\Documents\hairday\node_modules\webpack\lib\NormalModuleFactory.js:1747:35
+  
+  - Compilation.js:2375 
+    [hairday]/[webpack]/lib/Compilation.js:2375:28
+  
+  - NormalModuleFactory.js:1350 
+    [hairday]/[webpack]/lib/NormalModuleFactory.js:1350:13
+  
+  
+  - NormalModuleFactory.js:722 
+    [hairday]/[webpack]/lib/NormalModuleFactory.js:722:22
+  
+  
+  - NormalModuleFactory.js:904 
+    [hairday]/[webpack]/lib/NormalModuleFactory.js:904:22
+  
+  - NormalModuleFactory.js:438 
+    [hairday]/[webpack]/lib/NormalModuleFactory.js:438:10
+  
+  - NormalModuleFactory.js:1191 
+    [hairday]/[webpack]/lib/NormalModuleFactory.js:1191:25
+  
+  - NormalModuleFactory.js:1436 
+    [hairday]/[webpack]/lib/NormalModuleFactory.js:1436:8
+  
+  - NormalModuleFactory.js:1747 
+    [hairday]/[webpack]/lib/NormalModuleFactory.js:1747:35
+  
+  - child-compiler.js:174 
+    [hairday]/[html-webpack-plugin]/lib/child-compiler.js:174:18
+  
+  - Compiler.js:734 finalCallback
+    [hairday]/[webpack]/lib/Compiler.js:734:5
+  
+  - Compiler.js:770 
+    [hairday]/[webpack]/lib/Compiler.js:770:11
+  
+  - Compiler.js:1639 
+    [hairday]/[webpack]/lib/Compiler.js:1639:17
+  
+  
+  - Hook.js:21 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [hairday]/[tapable]/lib/Hook.js:21:14
+  
+  - Compiler.js:1635 
+    [hairday]/[webpack]/lib/Compiler.js:1635:33
+  
+  - Compilation.js:3631 finalCallback
+    [hairday]/[webpack]/lib/Compilation.js:3631:11
+  
+  - Compilation.js:3981 
+    [hairday]/[webpack]/lib/Compilation.js:3981:12
+  
+  
+</pre>
